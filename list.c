@@ -165,9 +165,6 @@ void * popCurrent(List * list) {
     list->current->next->prev=list->current->prev ;
     list->current=list->current->next ;
     return aux ;
-    
-    
-    return NULL;
 }
 
 void cleanList(List * list) {
