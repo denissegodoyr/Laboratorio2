@@ -82,7 +82,7 @@ void pushCurrent(List * list, void * data) {
     } else {
         Node* aux=list->current->next ;
         list->current->next=nuevo ;
-        nuevo->prev=lista->current ;
+        nuevo->prev=list->current ;
         if (aux==NULL) {
             nuevo->next=NULL ;
             list->tail=nuevo ;
