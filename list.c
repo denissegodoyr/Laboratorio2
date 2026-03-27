@@ -152,10 +152,11 @@ void * popCurrent(List * list) {
         list->current=list->head ;
         return aux ;
     }
-    Node* aux=list->current ;
+    void * aux=list->current->data ;
     list->current->prev->next=list->current->next ;
     list->current->next->prev=list->current->prev ;
-    return aux->data ;
+    list->current=list->current->next ;
+    return aux ;
     
     
     return NULL;
