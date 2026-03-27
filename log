@@ -167,3 +167,15 @@ Fri Mar 27 10:06:34 PM UTC 2026:
  1 file changed, 1 insertion(+)
  tests:  0|0
 3f41586
+Fri Mar 27 10:08:46 PM UTC 2026: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:146:19: error: dereferencing ‘void *’ pointer [-Werror]
+  146 |         return aux->data ;
+      |                   ^~
+list.c:146:19: error: request for member ‘data’ in something not a structure or union
+cc1: all warnings being treated as errors
+aff260b
